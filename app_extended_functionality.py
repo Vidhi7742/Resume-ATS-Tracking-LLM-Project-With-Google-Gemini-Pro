@@ -13,7 +13,7 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 company_database = {
     "Company1": "We are looking for a skilled software engineer with expertise in Python and Django...",
     "Company2": "Join our data science team and work on exciting projects involving machine learning and data analysis...",
-    # We can add more companies and job descriptions
+    # Add more companies and job descriptions
 }
 
 # Gemini Pro Response
@@ -82,6 +82,11 @@ if submit:
         st.subheader("Suitable Companies:")
         for match in matched_companies:
             st.write(f"{match['company']}: {match['similarity_score']:.2f}% match")
+
+        # Display company with the highest similarity
+        if matched_companies:
+            best_match = max(matched_companies, key=lambda x: x['similarity_score'])
+            st.subheader(f"Recommended Company: {best_match['company']} ({best_match['similarity_score']:.2f}% match)")
 
         # Recommend resume improvements
         recommended_improvements = recommend_resume_improvements(text)
