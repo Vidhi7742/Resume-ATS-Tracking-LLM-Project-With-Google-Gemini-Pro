@@ -32,9 +32,10 @@ streamlit run your_app_filename.py
 
 ## Project Structure
 
-1. app.py: Main application file with the Streamlit app.
-2. requirements.txt: List of project dependencies.
-3. .env: Configuration file for environment variables.
+1. app.py: Application file with the Streamlit app that uses the Google Generative AI (Gemini Pro) model to generate responses based on a predefined input prompt. The app allows users to paste a job description, upload a resume in PDF format, and then click the "Submit" button to get a response from the Gemini Pro model.
+2. app_extended_functionality.py: Application file with additional functionality. It includes a database of company job descriptions (company_database) and uses the Sentence-Transformers library to calculate semantic similarity between a resume and each job description in the database. It provides a list of suitable companies based on the similarity scores and recommends improvements for the resume, such as adding specific keywords.
+3. requirements.txt: List of project dependencies.
+4. .env: Configuration file for environment variables.
 
 Google Gemini Pro API
 The project utilizes the Google Gemini Pro API for generative content generation. Make sure to obtain an API key and set it in the .env file.
