@@ -22,12 +22,16 @@ GOOGLE_API_KEY="your_api_key_here"
 ## Usage
 Run the Streamlit app:
 
+```bash
 streamlit run your_app_filename.py
+```
+
 Paste the job description and upload your resume in PDF format.
 
 Click the "Submit" button to get the ATS evaluation.
 
-## Project Structure
+## Project Structure:
+
 app.py: Main application file with the Streamlit app.
 requirements.txt: List of project dependencies.
 .env: Configuration file for environment variables.
@@ -35,7 +39,7 @@ requirements.txt: List of project dependencies.
 Google Gemini Pro API
 The project utilizes the Google Gemini Pro API for generative content generation. Make sure to obtain an API key and set it in the .env file.
 
-Contributions : 
+## Contributions : 
 Contributions are welcome! If you find any issues or have improvements, feel free to open an issue or submit a pull request.
 
 
