@@ -13,36 +13,29 @@ Make sure you have the required dependencies installed by running:
 ```bash
 pip install -r requirements.txt
 
-
-
-Configuration
+## Configuration
 Create a .env file in the project root with your Google API key:
 
-bash
-Copy code
 GOOGLE_API_KEY="your_api_key_here"
 
-Usage
+## Usage
 Run the Streamlit app:
-bash
-Copy code
+
 streamlit run your_app_filename.py
 Paste the job description and upload your resume in PDF format.
 
 Click the "Submit" button to get the ATS evaluation.
 
-Project Structure
-your_app_filename.py: Main application file with the Streamlit app.
+## Project Structure
+app.py: Main application file with the Streamlit app.
 requirements.txt: List of project dependencies.
 .env: Configuration file for environment variables.
+
 Google Gemini Pro API
 The project utilizes the Google Gemini Pro API for generative content generation. Make sure to obtain an API key and set it in the .env file.
 
-Contributing
+Contributions : 
 Contributions are welcome! If you find any issues or have improvements, feel free to open an issue or submit a pull request.
 
-License
-This project is licensed under the MIT License.
 
 
-You can copy the entire block and paste it directly into your README.md file on GitHub.
