@@ -6,12 +6,13 @@ This project is a Resume ATS (Application Tracking System) implemented using Goo
 
 ## Getting Started
 
-### Prerequisites
+## Prerequisites
 
 Make sure you have the required dependencies installed by running:
 
 ```bash
 pip install -r requirements.txt
+
 
 ## Configuration
 Create a .env file in the project root with your Google API key:
