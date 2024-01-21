@@ -13,7 +13,7 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 company_database = {
     "Company1": "We are looking for a skilled software engineer with expertise in Python and Django...",
     "Company2": "Join our data science team and work on exciting projects involving machine learning and data analysis...",
-    # Add more companies and job descriptions
+    # We can add more companies and job descriptions
 }
 
 # Gemini Pro Response
