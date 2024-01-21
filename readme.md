@@ -13,18 +13,20 @@ Make sure you have the required dependencies installed by running:
 ```bash
 pip install -r requirements.txt
 
-## Configuration
 
+
+Configuration
 Create a .env file in the project root with your Google API key:
+
+bash
+Copy code
 GOOGLE_API_KEY="your_api_key_here"
 
-## Usage
-
+Usage
 Run the Streamlit app:
-
-```bash
+bash
+Copy code
 streamlit run your_app_filename.py
-
 Paste the job description and upload your resume in PDF format.
 
 Click the "Submit" button to get the ATS evaluation.
@@ -43,4 +45,4 @@ License
 This project is licensed under the MIT License.
 
 
-Replace `your_app_filename.py` with the actual filename of your Streamlit application file. Feel free to modify any section or add additional information as needed.
+You can copy the entire block and paste it directly into your README.md file on GitHub.
