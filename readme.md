@@ -13,16 +13,16 @@ Make sure you have the required dependencies installed by running:
 ```bash
 pip install -r requirements.txt
 
+## Configuration
 
-Configuration
 Create a .env file in the project root with your Google API key:
-
-```bash
 GOOGLE_API_KEY="your_api_key_here"
 
+## Usage
 
-Usage
 Run the Streamlit app:
+
+```bash
 streamlit run your_app_filename.py
 
 Paste the job description and upload your resume in PDF format.
